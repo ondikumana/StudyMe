@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.studyme.Files.EditFileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/action_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="85">
+
+                <EditText
+                    android:id="@+id/nameOfFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Name of New File"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:inputType="textPersonName"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFileEt"
+                    android:layout_below="@id/nameOfFile"
+                    android:inputType="textMultiLine"
+                    android:hint="\nWord: Definition\n"
+                    android:gravity="top"
+                    android:lineSpacingExtra="4dp"/>
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Upload File to Storage"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/uploadCheckBox"
+                android:layout_weight="5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10">
+
+                <Button
+                    android:layout_width="@dimen/new_or_edit_file_butoon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Cancel"
+                    android:textSize="20sp"
+                    android:padding="@dimen/multiple_choice_button_padding"
+                    android:id="@+id/editFileCancelBtn"
+                    android:onClick="goBack"
+                    android:background="@drawable/action_button_layout"/>
+
+                <Button
+                    android:layout_width="@dimen/new_or_edit_file_butoon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Save"
+                    android:textSize="20sp"
+                    android:padding="@dimen/multiple_choice_button_padding"
+                    android:id="@+id/editFileSaveBtn"
+                    android:onClick="saveFile"
+                    android:background="@drawable/action_button_layout"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

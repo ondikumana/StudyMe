@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">StudyMe</string>
+    <string name="title_activity_one">ActivityOne</string>
+    <string name="title_home">Home</string>
+    <string name="title_learning">Learning</string>
+    <string name="title_profile">Profile</string>
+    <string name="multiple_choice_button_test"></string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="submit_now_button">Submit Now</string>
+    <string name="view_report">Tap box to view report</string>
+    <string name="deleting_all_files_warning">All files will be deleted. This process is irreversible</string>
+    <string name="file_options_change_warning">Your progress will be reset if any change is made</string>
+    <string name="delete_file_warning">Delete this file? This process is irreversible</string>
+    <string name="delete_file_from_storage_checkbox">Delete file from storage</string>
+    <string name="no_user_files">You have no files. Tap "New File" to proceed</string>
+    <string name="delete_account_warning">This account will be deleted, and you will be signed out. This process is irreversible</string>
+    <string name="reset_progress_warning">All of your saved progress will be lost. This process is irreversible</string>
+    <string name="submit_question_text">Submit</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_shared_files">You have no shared files</string>
+    <string name="no_public_files">There are no public files</string>
+    <string name="upload_to_storage">Upload File to Storage</string>
+    <string name="remove_from_storage">Remove File from Storage</string>
+    <string name="share_file">Share File</string>
+    <string name="send_to">Send To: </string>
+    <string name="share_progress">Share Progress</string>
+    <string name="added_to_my_files">Added</string>
+    <string name="make_public">Make Public</string>
+</resources>

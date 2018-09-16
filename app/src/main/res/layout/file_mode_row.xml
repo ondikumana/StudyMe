@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/learningMode"
+                android:text="Study "
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/myGreen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerInputMethd"
+                android:layout_marginEnd="10dp"
+                android:text="Multiple Choice "
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/myGrey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/randomQuestions"
+                android:layout_marginEnd="10dp"
+                android:text="Random "
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/gradeD"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+</LinearLayout>

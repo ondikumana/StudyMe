@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Delete File"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/arsenal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_file_warning"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="@font/arsenal"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_file_from_storage_checkbox"
+            android:id="@+id/deleteFromStorageCb"
+            android:textSize="14sp"
+            android:fontFamily="@font/arsenal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/no"
+                android:layout_toLeftOf="@+id/yes"
+                android:fontFamily="@font/arsenal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete @Filename"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/yes"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/arsenal"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

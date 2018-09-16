@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Quiz Report"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/quizReportHeader"
+        android:fontFamily="@font/arsenal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/quizReportHeader"
+        android:id="@+id/relativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raw Score: "
+            android:textSize="16sp"
+            android:id="@+id/rawScoreString"
+            android:fontFamily="@font/arsenal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rawScoreString"
+            android:textSize="16sp"
+            android:text="7/10"
+            android:textStyle="bold"
+            android:id="@+id/rawScoreTextView"
+            android:fontFamily="@font/arsenal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@id/relativeLayout1"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score Percentage: "
+            android:textSize="16sp"
+            android:id="@+id/scoreString"
+            android:fontFamily="@font/arsenal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/scoreString"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="60%"
+            android:id="@+id/scorePercentageTextView"
+            android:fontFamily="@font/arsenal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@id/relativeLayout2"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unanswered Questions: "
+            android:textSize="16sp"
+            android:id="@+id/unAnsweredQuestionsString"
+            android:fontFamily="@font/arsenal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/unAnsweredQuestionsString"
+            android:textSize="16sp"
+            android:text="4"
+            android:textStyle="bold"
+            android:id="@+id/unAnsweredQuestionsTextView"
+            android:fontFamily="@font/arsenal"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="35dp"
+        android:text="You had difficulties with:"
+        android:id="@+id/difficultiesTextView"
+        android:textStyle="bold"
+        android:layout_below="@+id/relativeLayout3"
+        android:fontFamily="@font/arsenal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@id/difficultiesTextView"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrectlyAnsweredTextView"
+            android:textSize="16sp"
+            android:fontFamily="@font/arsenal"/>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="You are Awesome!"
+        android:layout_marginStart="35dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/awesomeTextView"
+        android:layout_below="@id/relativeLayout2"
+        android:fontFamily="@font/arsenal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Dismiss"
+        android:textSize="16sp"
+        android:id="@+id/dismissDialog"
+        android:textStyle="bold"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/scrollView"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arsenal"/>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.studyme.Profile.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/action_bar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:padding="@dimen/answer_edittext_padding"
+                    android:background="@drawable/answer_edittext_layout"
+                    android:fontFamily="@font/arsenal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Name"
+                    android:textAllCaps="false"
+                    android:layout_gravity="right"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/updateName"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:padding="@dimen/answer_edittext_padding"
+                    android:background="@drawable/answer_edittext_layout"
+                    android:fontFamily="@font/arsenal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Email"
+                    android:textAllCaps="false"
+                    android:layout_gravity="right"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/updateEmail"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Password"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/updatePassword"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey"
+                    android:id="@+id/updatePasswordLineView">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset All Progress"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/resetProgress"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete All Files"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/deleteAllFiles"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/deleteAccount"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Feedback to Olivier"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/feedbackToOlivier"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:id="@+id/signOut"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myGrey">
+                </View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bottom_nav_background"
+        app:itemIconTint="@drawable/bottom_nav_state_color"
+        app:itemTextColor="@drawable/bottom_nav_state_color"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
+
+

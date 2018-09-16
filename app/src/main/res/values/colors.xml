@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#198c8c</color>
+    <color name="colorPrimaryDark">#198c8c</color>
+    <color name="colorAccent">#198c8c</color>
+    <color name="myGreen">#198c8c</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="myGrey">#bfbfbf</color>
+    <color name="transparent">#00000000</color>
+    <color name="myRed">#cc0000</color>
+    <color name="gradeB">#b2d8b2</color>
+    <color name="gradeC">#cccc00</color>
+    <color name="gradeD">#cc8400</color>
+    <color name="myWhite">#f2f2f2</color>
+    <color name="myYellow">#ffff19</color>
+    <color name="myBlue">#2D2DE5</color>
+</resources>

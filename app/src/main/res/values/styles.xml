@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="myTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/arsenal</item>
+    </style>
+
+    <style name="myButtonStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/arsenal</item>
+    </style>
+
+    <style name="myCheckBoxStyle" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/arsenal</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/myTextViewStyle</item>
+        <item name="android:buttonStyle">@style/myButtonStyle</item>
+        <item name="android:checkboxStyle">@style/myCheckBoxStyle</item>
+
+    </style>
+
+    <style name="noAnimTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

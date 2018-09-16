@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NameOfFile"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/nameOfFile"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/added_to_my_files"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/addedToMyFilesTextView"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:gravity="center"
+            android:layout_below="@+id/relativeLayout"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginLeft="15dp"
+            android:weightSum="100"
+            android:id="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="71"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="18"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/learningMode"
+                    android:text="Study"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/myGreen"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="35"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/learningMode"
+                    android:id="@+id/answerInputMethd"
+                    android:text="Multiple Choice"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/myGrey"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="18"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/answerInputMethd"
+                    android:id="@+id/randomQuestions"
+                    android:text="Random"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/gradeD"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fromLinearLayout"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:id="@+id/createdByNameOfUserTextView"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

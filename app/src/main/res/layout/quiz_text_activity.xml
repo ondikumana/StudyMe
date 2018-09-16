@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.studyme.QuizMode.QuizTextActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <include layout="@layout/action_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/nameOfFileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="NameOfFile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/file_mode_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:text="Hello World!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/question_textview_text_size"
+                android:background="@drawable/question_textview_background"/>
+
+            <TextView
+                android:id="@+id/feedbackTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/action_button_margin_top"
+                android:layout_weight="50">
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="@dimen/action_button_width"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/multiple_choice_button_padding"
+                    android:layout_alignParentEnd="true"
+                    android:enabled="true"
+                    android:onClick="restartQuiz"
+                    android:text="Submit Now"
+                    android:visibility="visible"
+                    android:background="@drawable/action_button_layout"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/answer_edittext_layout"
+                    android:id="@+id/answerRelativeLayout">
+
+                    <EditText
+                        android:id="@+id/answerEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Type answer..."
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/answer_edittext_padding"
+                        android:background="@color/transparent"
+                        android:inputType="textPersonName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toLeftOf="@+id/questionSubmitIcon"
+                        android:fontFamily="@font/arsenal"/>
+
+                    <ImageView
+                        android:id="@+id/questionSubmitIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_submit_green"
+                        android:gravity="center"
+                        android:layout_margin="10dp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_nav_background"
+            app:itemIconTint="@drawable/bottom_nav_state_color"
+            app:itemTextColor="@drawable/bottom_nav_state_color"
+            app:menu="@menu/navigation" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+

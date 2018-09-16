@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.studyme.Home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/personalWelcomeMessage"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/tabsTabLayout"
+            android:layout_below="@+id/personalWelcomeMessage">
+
+        </android.support.design.widget.TabLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relativeLayoutHomeTabs"-->
+        <!--android:layout_below="@+id/appBar"-->
+        <!--android:layout_above="@+id/navigation">-->
+
+        <!--<include layout="@layout/home_tabs_layout"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container"
+            android:layout_below="@+id/tabsTabLayout"
+            android:layout_above="@+id/navigation">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_nav_background"
+            app:itemIconTint="@drawable/bottom_nav_state_color"
+            app:itemTextColor="@drawable/bottom_nav_state_color"
+            app:menu="@menu/navigation" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
